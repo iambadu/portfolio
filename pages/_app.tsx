@@ -7,7 +7,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,
+		Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
   }
 `;
 
