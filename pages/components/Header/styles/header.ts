@@ -7,10 +7,12 @@ let main = "#25373D";
 export const HeadWrap = styled.div`
   width: 100%;
   position: relative;
+  /* background-color: ${colors.gray_8}; */
 `;
 
 // HOM HERO
 export const ImgWrap = styled.div`
+  background-color: ${colors.gray_8};
   position: absolute;
   z-index: 500;
   top: 0;
@@ -25,6 +27,8 @@ export const ImgWrap = styled.div`
   }
 `;
 export const HeroWrap = styled.div`
+  height: calc(100vh - 60px);
+
   color: ${colors.gray_9};
   z-index: 1000;
   position: relative;
@@ -36,8 +40,8 @@ export const HeroWrap = styled.div`
 export const Hero = styled.div`
   max-width: 700px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin: 100px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: -50px;
   overflow: hidden;
   position: relative;
 `;
@@ -66,7 +70,7 @@ export const Btn = styled.button`
     color: #fff;
     text-decoration: none;
     display: block;
-    transition: all .4s;
+    transition: all 0.4s;
   }
   text-align: center;
   text-transform: uppercase;
@@ -79,18 +83,18 @@ export const Btn = styled.button`
   }
 `;
 export const PBtn = styled(Btn)`
-a:hover {
-  background-color: ${colors.pink_5};
-  color: #fff;
-}
+  a:hover {
+    background-color: ${colors.pink_5};
+    color: #fff;
+  }
   background-color: ${colors.pink_7};
   color: #fff;
 `;
 export const SBtn = styled(Btn)`
-a:hover {
-  background-color: ${colors.gray_5};
-  color: #fff;
-}
+  a:hover {
+    background-color: ${colors.gray_5};
+    color: #fff;
+  }
   background-color: ${colors.gray_7};
   color: #fff;
 `;
@@ -109,7 +113,6 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 15px;
   align-items: center;
-  color: #fff;
   max-width: 1100px;
   @media (min-width: 1450px) {
     max-width: 1400px;
@@ -208,14 +211,81 @@ export const Item = styled.li`
   }
 `;
 
-// WORK SECTION
-export const Work = styled(Header)`
+//@SKILLS SECTION
+
+export const Skills = styled.div`
+  background-color: ${colors.gray_3};
+  color: ${colors.gray_8};
   padding: 20px 0;
+`;
+
+export const SkillWrap = styled.div`
+display:flex;
+max-width: 700px;
+margin: 20px auto;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+
+
+`;
+export const SkillItem = styled.div`
+&:hover {
+  transform:scale(1.2);
+}
+transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+display:flex;
+/* min-width:100px; */
+flex-wrap:nowrap;
+position:relative;
+overflow:hidden;
+img {
+position: absolute;
+width:40px;
+height:40px;
+background:#fff;
+border-radius:50%;
+top:50%;
+left:0;
+  transform: translate(-50%, -50%); 
+}
+p {
+display:inline-block;
+background-color: #fff;
+padding: 0;
+border-radius: 3px;
+font-weight:500;
+padding:5px 18px 5px 35px;
+}
+border-radius:3px;
+margin: 10px 18px;
+overflow: visible;
+width:fit-content;
+`;
+
+// @WORK SECTION
+export const Work = styled(Header)`
+  padding: 40px 0;
+  color: #fff;
+`;
+
+export const SectionTitle = styled.h2`
+  font-size: ${rfs(45)};
+  text-align: center;
+`;
+
+export const SectionText = styled.p`
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
 `;
 export const WorkWrap = styled(Container)`
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @media (min-width: 1450px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 `;
 export const WorkItem = styled(Container)`
   border-radius: 8px;
