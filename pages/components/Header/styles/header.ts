@@ -43,24 +43,41 @@ export const Hero = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: -50px;
   overflow: hidden;
+  margin: 0 15px;
+
   position: relative;
 `;
 export const HeroIn = styled.div`
   padding: 20px 30px;
+  @media (max-width: 480px) {
+    padding: 10px 15px;
+  }
 `;
 export const HeroTitle = styled.h1`
   padding: 15px 0;
   font-size: ${rfs(70)};
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 export const HeroSubText = styled.p`
   color: ${colors.gray_7};
   font-size: ${rfs(18)};
-  line-height: 1.5;
+  /* line-height: 1.5; */
   padding-bottom: 10px;
   font-weight: 500;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const LinkWrap = styled.div`
+box-sizing:border-box;
   display: flex;
+  overflow:hidden;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  padding: 0 15px 15px; 
+  }
   width: 100%;
 `;
 
@@ -81,6 +98,10 @@ export const Btn = styled.button`
   &:focus {
     outline: 0;
   }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: 10px;
+    }
 `;
 export const PBtn = styled(Btn)`
   a:hover {
@@ -101,13 +122,6 @@ export const SBtn = styled(Btn)`
 
 // HEADER AND NAVIGATION
 
-export const Header = styled.div`
-  background-color: ${colors.gray_8};
-  z-index: 1000;
-  position: relative;
-  width: 100%;
-`;
-
 export const Container = styled.div`
   display: flex;
   margin: 0 auto;
@@ -122,93 +136,11 @@ export const Container = styled.div`
   }
 `;
 
-export const MobiWrap = styled.div`
-  margin-right: auto;
-  @media (max-width: 480px) {
-    display: flex;
-    margin: 0;
-    width: 100%;
-    align-items: center;
-  }
-`;
-
-export const Menu = styled.div`
-  display: block;
-  width: 35px;
-  height: 30px;
-  display: block;
-  flex-direction: column;
-  @media (min-width: 480px) {
-    display: none;
-  }
-`;
-
-export const NavIcon = styled.div<{ active: boolean }>`
-  width: 100%;
-  display: inline-block;
-  height: 3px;
-  background: ${({ active }) => (active ? "transparent" : "#fff")};
-  transition: all 0.2s;
+export const Header = styled.div`
+  background-color: ${colors.gray_8};
+  z-index: 1000;
   position: relative;
-  &::before {
-    top: ${({ active }) => (active ? "0rem" : "-.6rem")};
-    transform: ${({ active }) => (active ? "rotate(135deg)" : "none")};
-  }
-  &::after {
-    top: ${({ active }) => (active ? "0rem" : "0.65rem")};
-    transform: ${({ active }) => (active ? "rotate(-135deg)" : "none")};
-  }
-  &::before,
-  &::after {
-    width: 100%;
-    display: inline-block;
-    height: 3px;
-    background: #fff;
-    transition: all 0.2s;
-    content: "";
-    position: absolute;
-    left: 0;
-  }
-`;
-
-export const Logo = styled.div`
-  margin-right: auto;
-`;
-export const Navi = styled.nav<{ active: boolean }>`
-  @media (max-width: 480px) {
-    display: ${({ active }) => (active ? "block" : "none")};
-    width: 100%;
-    text-align: center;
-  }
-`;
-
-export const List = styled.ul`
-  display: flex;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-  @media (max-width: 480px) {
-    padding-top: 40px;
-    width: 100%;
-    flex-direction: column;
-  }
-`;
-
-export const Item = styled.li`
-  a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 8px;
-    font-size: 14px;
-    font-weight: 600;
-    display: inline-block;
-    @media (max-width: 480px) {
-      padding: 10px;
-      display: block;
-      margin-bottom: 10px;
-      border: 2px solid #9faccf;
-    }
-  }
+  width: 100%;
 `;
 
 //@SKILLS SECTION
@@ -216,51 +148,49 @@ export const Item = styled.li`
 export const Skills = styled.div`
   background-color: ${colors.gray_3};
   color: ${colors.gray_8};
-  padding: 20px 0;
+  padding: 35px 0;
 `;
 
 export const SkillWrap = styled.div`
-display:flex;
-max-width: 700px;
-margin: 20px auto;
-flex-wrap:wrap;
-align-items:center;
-justify-content:center;
-
-
+  display: flex;
+  max-width: 700px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 `;
 export const SkillItem = styled.div`
-&:hover {
-  transform:scale(1.2);
-}
-transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
-display:flex;
-/* min-width:100px; */
-flex-wrap:nowrap;
-position:relative;
-overflow:hidden;
-img {
-position: absolute;
-width:40px;
-height:40px;
-background:#fff;
-border-radius:50%;
-top:50%;
-left:0;
-  transform: translate(-50%, -50%); 
-}
-p {
-display:inline-block;
-background-color: #fff;
-padding: 0;
-border-radius: 3px;
-font-weight:500;
-padding:5px 18px 5px 35px;
-}
-border-radius:3px;
-margin: 10px 18px;
-overflow: visible;
-width:fit-content;
+  &:hover {
+    transform: scale(1.2);
+  }
+  transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  display: flex;
+  /* min-width:100px; */
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 5px 18px 5px 35px;
+  }
+  border-radius: 3px;
+  margin: 10px 18px;
+  overflow: visible;
+  width: fit-content;
 `;
 
 // @WORK SECTION
@@ -272,12 +202,14 @@ export const Work = styled(Header)`
 export const SectionTitle = styled.h2`
   font-size: ${rfs(45)};
   text-align: center;
+  padding: 15px 0;
 `;
 
 export const SectionText = styled.p`
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
+  font-weight: 500;
 `;
 export const WorkWrap = styled(Container)`
   display: grid;
@@ -292,4 +224,41 @@ export const WorkItem = styled(Container)`
   background-color: ${colors.gray_3};
   height: 220px;
   width: 100%;
+`;
+
+// @ABOUT ME SECTION
+export const Aboutme = styled.div`
+  padding: 25px 0;
+  width: 100%;
+  background-color: #fff;
+  color: ${colors.gray_8};
+`;
+
+export const AboutWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+`;
+
+export const AboutText = styled.div`
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+export const AboutImg = styled.div`
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  svg {
+    width: 50%;
+    height: auto;
+  }
 `;

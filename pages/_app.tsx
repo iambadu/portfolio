@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  }
   * {
   font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,
 		Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
