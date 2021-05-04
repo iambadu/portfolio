@@ -76,7 +76,7 @@ box-sizing:border-box;
   overflow:hidden;
   @media (max-width: 480px) {
     flex-direction: column;
-  padding: 0 15px 15px; 
+  padding: 0 15px 15px;
   }
   width: 100%;
 `;
@@ -202,7 +202,7 @@ export const Work = styled(Header)`
 export const SectionTitle = styled.h2`
   font-size: ${rfs(45)};
   text-align: center;
-  padding: 15px 0;
+  padding-top: 15px;
 `;
 
 export const SectionText = styled.p`
@@ -219,7 +219,7 @@ export const WorkWrap = styled(Container)`
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 `;
-export const WorkItem = styled(Container)`
+export const WorkItem = styled.div`
   border-radius: 8px;
   background-color: ${colors.gray_3};
   height: 220px;
@@ -234,8 +234,9 @@ export const Aboutme = styled.div`
   color: ${colors.gray_8};
 `;
 
-export const AboutWrap = styled.div`
+export const SectionWrap = styled.div`
   display: flex;
+  width:100%;
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
@@ -243,17 +244,14 @@ export const AboutWrap = styled.div`
   }
 `;
 
-export const AboutText = styled.div`
+export const Section = styled.div`
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
   }
 `;
 export const AboutImg = styled.div`
-  width: 50%;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+padding: 25px 0;
   height: fit-content;
   display: flex;
   justify-content: center;

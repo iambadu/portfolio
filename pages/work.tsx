@@ -1,8 +1,8 @@
-import * as Home from './components/Header/styles/header';
-import TopHead from './components/topheader';
+
+import Project from './components/project';
 
 export default function Work() {
     return (
-        <TopHead/>
+        <Project/>
     )
 }

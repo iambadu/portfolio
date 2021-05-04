@@ -1,14 +1,12 @@
 import * as Home from "./styles/header";
 import Link from "next/link";
-import Footer from "../footer"
+import Footer from "../footer";
 import TopHead from "../topheader";
-
-
 
 export default function Header() {
   return (
     <Home.HeadWrap>
-      <TopHead/>
+      <TopHead />
       <Home.ImgWrap>
         <img src="/img/bgImg.svg" />
       </Home.ImgWrap>
@@ -130,8 +128,8 @@ export default function Header() {
         <Home.SectionText>My Skills</Home.SectionText>
         <Home.SectionTitle>What I can do</Home.SectionTitle>
         <Home.Container>
-          <Home.AboutWrap>
-            <Home.AboutText>
+          <Home.SectionWrap>
+            <Home.Section>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               sunt, optio eos totam fugiat perferendis reiciendis nemo, minus
               voluptates cumque nulla atque? Recusandae, velit? Qui modi
@@ -140,14 +138,15 @@ export default function Header() {
               dignissimos obcaecati voluptatum sequi error incidunt assumenda
               illum veniam.
 
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              sunt, optio eos totam fugiat perferendis reiciendis nemo, minus
-              voluptates cumque nulla atque? Recusandae, velit? Qui modi
-              voluptate eligendi repudiandae. Voluptate officiis ea tempore
+               Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Quaerat sunt, optio eos totam fugiat perferendis reiciendis
+              nemo, minus voluptates cumque nulla atque? Recusandae, velit? Qui
+              modi voluptate eligendi repudiandae. Voluptate officiis ea tempore
               odit! Molestias rem id in accusantium recusandae, ducimus
               dignissimos obcaecati voluptatum sequi error incidunt assumenda
               illum veniam.
-            </Home.AboutText>
+            </Home.Section>
+            <Home.Section>
             <Home.AboutImg>
               <svg
                 id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
@@ -512,10 +511,11 @@ export default function Header() {
                 </g>
               </svg>
             </Home.AboutImg>
-          </Home.AboutWrap>
+            </Home.Section>
+          </Home.SectionWrap>
         </Home.Container>
       </Home.Aboutme>
-      <Footer/>
+      <Footer />
     </Home.HeadWrap>
   );
 }
