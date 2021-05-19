@@ -9,6 +9,10 @@ export const Header = styled.div`
   width: 100%;
 `;
 
+// export const Logo = styled.img`
+
+// `;
+
 export const Container = styled.div`
   display: flex;
   margin: 0 auto ;
@@ -74,6 +78,9 @@ export const NavIcon = styled.div<{ active: boolean }>`
 
 export const Logo = styled.div`
   margin-right: auto;
+  img {
+    height: 30px;
+  }
 `;
 export const Navi = styled.nav<{ active: boolean }>`
   @media (max-width: 480px) {
@@ -99,10 +106,14 @@ export const Item = styled.li`
   a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 9px 18px;
     font-size: 14px;
     font-weight: 600;
     display: inline-block;
+    border-radius:3px;
+    &:hover {
+      background-color: ${colors.gray_9};
+    }
     @media (max-width: 480px) {
       padding: 10px;
       display: block;

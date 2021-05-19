@@ -1,0 +1,60 @@
+{
+    "work": [
+        {
+          "url": "netflix",
+          "thumb": "netflix.png",
+          "image1":"netflix-1.png",
+          "image2":"netflix-2.png",
+          "title": "Netflix Website Clone",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "tools": [
+            "Reactjs",
+            "Firebase Firestore",
+            "React Router",
+            "HTML/CSS",
+            "Firebase Authentication",
+            "Styled Components"
+          ]
+        },
+        {
+          "url": "tesla",
+          "thumb": "tesla.png",
+          "image1": "tesla-1.png",
+          "image2": "tesla-2.png",
+          "link":"http://www.facebook.com",
+          "title": "Tesla Website Clone",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
+        },
+        {
+          "url": "microsoft",
+          "thumb": "microsoft.png",
+          "image1": "microsoft-1.png",
+          "image2": "microsoft-2.png",
+          "link": "http://www.facebook.com",
+          "title": "Microsoft Website Clone",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
+        },
+        {
+          "url": "techjobs",
+          "thumb": "techjobs.png",
+          "image1": "techjobs-1.png",
+          "image2": "techjobs-2.png",
+          "link": "http://www.facebook.com",
+          "title": "Jobs Search Website",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "tools": ["Reactjs", "Github API", "Nextjs", "HTML/CSS", "SASS"]
+        },
+        {
+          "url": "pomodoro",
+          "thumb": "pomodoro.png",
+          "image1": "pomodoro-1.png",
+          "image2": "pomodoro-2.png",
+          "link": "http://www.facebook.com",
+          "title": "Pomodoro Clock",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "tools": ["Reactjs", "HTML/CSS", "SASS"]
+        }
+    ]
+}

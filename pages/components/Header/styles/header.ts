@@ -19,15 +19,21 @@ export const ImgWrap = styled.div`
   left: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: auto;
   img {
     width: 100%;
     height: fit-content;
-    min-height: 100vh;
+    @media (min-width: 1399px) {
+      height: 80vh;
+    }
+    min-height: 90vh;
   }
 `;
 export const HeroWrap = styled.div`
-  height: calc(100vh - 60px);
+  height: calc(90vh - 70px);
+  @media (min-width: 1399px) {
+  height: 70vh;
+}
 
   color: ${colors.gray_9};
   z-index: 1000;
@@ -38,6 +44,9 @@ export const HeroWrap = styled.div`
   justify-content: center;
 `;
 export const Hero = styled.div`
+@media (min-width: 1399px) {
+  max-width: 900px;
+}
   max-width: 700px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -67,7 +76,10 @@ export const HeroSubText = styled.p`
   padding-bottom: 10px;
   font-weight: 500;
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 1rem;
+  }
+  @media (min-width: 1399px) {
+    font-size: 24px;
   }
 `;
 export const LinkWrap = styled.div`
@@ -91,7 +103,7 @@ export const Btn = styled.button`
   }
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   width: 50%;
   border: none;
@@ -201,10 +213,19 @@ export const Work = styled(Header)`
 
 export const SectionTitle = styled.h2`
   font-size: ${rfs(45)};
-  text-align: center;
+  text-align: left;
   padding-top: 15px;
 `;
-
+export const TitleWrap = styled.div`
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1100px;
+  @media (min-width: 1450px) {
+    max-width: 1400px;
+  }
+  @media (max-width: 480px) {
+  }
+`;
 export const SectionText = styled.p`
   text-transform: uppercase;
   font-size: 14px;
@@ -213,17 +234,34 @@ export const SectionText = styled.p`
 `;
 export const WorkWrap = styled(Container)`
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  @media (min-width: 1450px) {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    a:first-child {
+      grid-area: span 1!important;
+    }
   }
+  grid-template-columns: 0.7fr 0.7fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  a:first-child {
+    grid-area: span 2 / span 2;
+  }
+
+  /* @media (min-width: 1450px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  } */
 `;
-export const WorkItem = styled.div`
+export const WorkItem = styled.a`
   border-radius: 8px;
   background-color: ${colors.gray_3};
-  height: 220px;
   width: 100%;
+    height:fit-content;
+    overflow:hidden;
+  img {
+    display:block;
+    object-fit:cover;
+    width:100%;
+  }
 `;
 
 // @ABOUT ME SECTION
