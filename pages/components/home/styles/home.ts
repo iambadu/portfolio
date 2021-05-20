@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Link from "next/link";
+
 import colors from "../../../../utils/style/colors";
 import rfs from "../../../../utils/style/rfs";
 
@@ -187,7 +189,7 @@ export const SkillItem = styled.div`
     height: 40px;
     background: #fff;
     border-radius: 50%;
-    top: 50%;
+    bottom: 0;
     left: 0;
     transform: translate(-50%, -50%);
   }
@@ -200,7 +202,7 @@ export const SkillItem = styled.div`
     padding: 5px 18px 5px 35px;
   }
   border-radius: 3px;
-  margin: 10px 18px;
+  margin: 5px 18px;
   overflow: visible;
   width: fit-content;
 `;
@@ -214,11 +216,12 @@ export const Work = styled(Header)`
 export const SectionTitle = styled.h2`
   font-size: ${rfs(45)};
   text-align: left;
+  font-weight:300;
   padding-top: 15px;
 `;
 export const TitleWrap = styled.div`
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
   max-width: 1100px;
   @media (min-width: 1450px) {
     max-width: 1400px;
@@ -251,7 +254,11 @@ export const WorkWrap = styled(Container)`
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   } */
 `;
-export const WorkItem = styled.a`
+export const WorkItem = styled.div`
+&:hover{
+  opacity: .7;
+}
+transition: all .2s;
   border-radius: 8px;
   background-color: ${colors.gray_3};
   width: 100%;

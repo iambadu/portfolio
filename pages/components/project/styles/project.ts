@@ -66,7 +66,7 @@ export const SectWrp = styled.div`
 
 export const WorkBtn = styled.a`
   display: inline-block;
-  margin: 0 10px;
+  margin: 6px 10px;
   border-radius: 3px;
   background-color: ${colors.pink_6};
   color: #fff;

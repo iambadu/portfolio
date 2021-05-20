@@ -1,5 +1,5 @@
 import Footer from "../footer";
-import { SectionTitle, Section, SectionWrap } from "../Header/styles/header";
+import { SectionTitle, Section, SectionWrap } from "../Header/styles/home";
 import TopHead from "../topheader";
 import { Container } from "../topheader/styles/topheader";
 import * as P from "./styles/project";

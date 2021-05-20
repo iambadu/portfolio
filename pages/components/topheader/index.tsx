@@ -21,7 +21,7 @@ export default function TopHead() {
           <Home.Logo>
             <Link href="/">
               <a>
-                <img src="./img/logo.svg" alt="" />
+                <img src="/img/logo.svg" alt="" />
               </a>
             </Link>
           </Home.Logo>

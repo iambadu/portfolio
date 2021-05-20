@@ -1,117 +1,116 @@
-import * as Home from "./styles/header";
+import workdata from "../../../utils/workdata.json";
+
+import * as H from "./styles/home";
 import Link from "next/link";
 import Footer from "../footer";
 import TopHead from "../topheader";
 
-export default function Header() {
+export default function Home() {
+  console.log(workdata.work);
+
   return (
-    <Home.HeadWrap>
+    <H.HeadWrap>
       <TopHead />
-      <Home.ImgWrap>
+      <H.ImgWrap>
         <img src="/img/bgImg.svg" />
-      </Home.ImgWrap>
-      <Home.HeroWrap>
-        <Home.Hero>
-          <Home.HeroIn>
-            <Home.HeroTitle>Hi there...Welcome</Home.HeroTitle>
-            <Home.HeroSubText>
+      </H.ImgWrap>
+      <H.HeroWrap>
+        <H.Hero>
+          <H.HeroIn>
+            <H.HeroTitle>Hi there...Welcome</H.HeroTitle>
+            <H.HeroSubText>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               cupiditate ullam, ad veritatis accusantium numquam illum minus
               dolores. Quo cumque minus atque? Iusto veniam suscipit, quibusdam
               esse quos eos aliquam.
-            </Home.HeroSubText>
-          </Home.HeroIn>
-          <Home.LinkWrap>
-            <Home.PBtn>
+            </H.HeroSubText>
+          </H.HeroIn>
+          <H.LinkWrap>
+            <H.PBtn>
               <Link href="/">
                 <a>Hello</a>
               </Link>
-            </Home.PBtn>
-            <Home.SBtn>
+            </H.PBtn>
+            <H.SBtn>
               <Link href="/">
                 <a>Hello</a>
               </Link>
-            </Home.SBtn>
-          </Home.LinkWrap>
-        </Home.Hero>
-      </Home.HeroWrap>
+            </H.SBtn>
+          </H.LinkWrap>
+        </H.Hero>
+      </H.HeroWrap>
 
-      <Home.Work>
-        <Home.TitleWrap>
-          <Home.SectionText>Recent projects</Home.SectionText>
-          <Home.SectionTitle>Recent projects</Home.SectionTitle>
-        </Home.TitleWrap>
-        <Home.WorkWrap>
-          <Home.WorkItem>
-            <img src="./img/netflix.png" alt="" />
-          </Home.WorkItem>
-          <Home.WorkItem>
-            <img src="./img/microsoft.png" alt="" />
-          </Home.WorkItem>
-          <Home.WorkItem>
-            <img src="./img/tesla.png" alt="" />
-          </Home.WorkItem>
-          <Home.WorkItem>
-            <img src="./img/techjobs.png" alt="" />
-          </Home.WorkItem>
-          <Home.WorkItem>
-            <img src="./img/pomodoro.png" alt="" />
-          </Home.WorkItem>
+      <H.Work>
+        <H.TitleWrap>
+          <H.SectionText>Recent projects</H.SectionText>
+          <H.SectionTitle>Recent projects</H.SectionTitle>
+        </H.TitleWrap>
+        <H.WorkWrap>
+          {workdata.work.map((item, i) => {
+            return (
+              <Link key={i} href={`/work/${item.url}`}>
+                <a>
+                <H.WorkItem>
+                  <img src={`/img/${item.thumb}`} alt="" />
+                </H.WorkItem>
+                </a>
+              </Link>
+            );
+          })}
+        </H.WorkWrap>
+      </H.Work>
 
-        </Home.WorkWrap>
-      </Home.Work>
-
-      <Home.Skills>
-        <Home.TitleWrap>
-        <Home.SectionText>My Skills</Home.SectionText>
-        <Home.SectionTitle>What I can do</Home.SectionTitle>
-          <Home.SkillWrap>
-            <Home.SkillItem>
+      <H.Skills>
+        <H.TitleWrap>
+          <H.SectionText>My Skills</H.SectionText>
+          <H.SectionTitle>What I can do</H.SectionTitle>
+          <H.SkillWrap>
+            <H.SkillItem>
               <img src="/img/skills/javascript.svg" alt="" />
               <p>Javascript</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/css3.svg" alt="" />
               <p>CSS3</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/typescript.svg" alt="" />
               <p>Typescript</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/github.svg" alt="" />
               <p>Github</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/react.svg" alt="" />
               <p>Reactjs</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/wordpress.svg" alt="" />
               <p>Wordpress</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/sass.svg" alt="" />
               <p>Sass</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/next.svg" alt="" />
               <p>Nextjs</p>
-            </Home.SkillItem>
-            <Home.SkillItem>
+            </H.SkillItem>
+            <H.SkillItem>
               <img src="/img/skills/html5.svg" alt="" />
               <p>HTML</p>
-            </Home.SkillItem>
-          </Home.SkillWrap>
-        </Home.TitleWrap>
-      </Home.Skills>
+            </H.SkillItem>
+          </H.SkillWrap>
+        </H.TitleWrap>
+      </H.Skills>
 
-      <Home.Aboutme>
-               <Home.SectionText>My Skills</Home.SectionText>
-        <Home.Container>
-          <Home.SectionWrap>
-            <Home.Section>
-        <Home.SectionTitle>What I can do</Home.SectionTitle>
+      <H.Aboutme>
+        <H.SectionText>My Skills</H.SectionText>
+        <H.Container>
+          <H.SectionWrap>
+            <H.Section>
+              <H.SectionTitle>What I can do</H.SectionTitle>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               sunt, optio eos totam fugiat perferendis reiciendis nemo, minus
               voluptates cumque nulla atque? Recusandae, velit? Qui modi
@@ -125,9 +124,9 @@ export default function Header() {
               odit! Molestias rem id in accusantium recusandae, ducimus
               dignissimos obcaecati voluptatum sequi error incidunt assumenda
               illum veniam.
-            </Home.Section>
-            <Home.Section>
-              <Home.AboutImg>
+            </H.Section>
+            <H.Section>
+              <H.AboutImg>
                 <svg
                   id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
                   data-name="Layer 1"
@@ -490,12 +489,12 @@ export default function Header() {
                     />
                   </g>
                 </svg>
-              </Home.AboutImg>
-            </Home.Section>
-          </Home.SectionWrap>
-        </Home.Container>
-      </Home.Aboutme>
+              </H.AboutImg>
+            </H.Section>
+          </H.SectionWrap>
+        </H.Container>
+      </H.Aboutme>
       <Footer />
-    </Home.HeadWrap>
+    </H.HeadWrap>
   );
 }

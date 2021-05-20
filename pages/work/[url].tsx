@@ -1,21 +1,14 @@
-import { useRouter } from "next/router";
 import Footer from "../components/footer";
-import {
-  SectionTitle,
-  Section,
-  SectionWrap,
-} from "../components/Header/styles/header";
+import {SectionTitle,TitleWrap, Section,SectionWrap,} from "../components/home/styles/home";
 import TopHead from "../components/topheader";
 import { Container } from "../components/topheader/styles/topheader";
 import * as W from "./styles/work";
 
 import workdata from "../../utils/workdata.json";
 
-export default function Project({ data, redirect }) {
-  let router = useRouter();
-  if (redirect) {
-    router.push("/404");
-  }
+export default function Project({ data }) {
+console.log(data);
+
   return (
     <>
       <TopHead />
@@ -25,7 +18,9 @@ export default function Project({ data, redirect }) {
         </Container>
       </W.TitleWrap>
       <W.SideWrap>
+        <TitleWrap>
         <SectionTitle>Overview</SectionTitle>
+        </TitleWrap>
         <Container>
           <SectionWrap>
             <Section>
@@ -44,7 +39,9 @@ export default function Project({ data, redirect }) {
 
       <W.SectWrp>
         <W.SideWrap>
+          <TitleWrap>
           <SectionTitle>Technologies used</SectionTitle>
+          </TitleWrap>
           <Container>
             <SectionWrap>
               <Section>
@@ -52,9 +49,11 @@ export default function Project({ data, redirect }) {
               </Section>
               <Section>
                 <W.WorkList>
-                  {data.tools.map((item) => {
-                    return <W.WorkListItem>{item}</W.WorkListItem>;
-                  })}
+                  {data.tools.map((item, i) => {
+                    return (
+                      <W.WorkListItem key={i}>{item}</W.WorkListItem>
+                      )
+                    })}
                 </W.WorkList>
               </Section>
             </SectionWrap>
@@ -66,14 +65,19 @@ export default function Project({ data, redirect }) {
   );
 }
 
+export async function getStaticPaths() {
+  const paths = workdata.work.map((work) => ({
+    params: { url: work.url },
+  }));
+
+  return { paths, fallback: false };
+}
+
 export async function getStaticProps({ params }) {
   const { url } = params;
-  try {
-    const data = workdata.work.filter((item) => item.url === url);
-    return {
-      props: { data },
-    };
-  } catch (err) {
-    return { props: { data: {}, redirect: true } };
-  }
+
+  const data = workdata.work.filter((item) => item.url === url);
+  return {
+    props: { data: data[0] },
+  };
 }

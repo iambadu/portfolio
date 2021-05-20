@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import colors from "../../../../utils/style/colors";
-import rfs from "../../../../utils/style/rfs";
+import colors from "../../../utils/style/colors";
+import rfs from "../../../utils/style/rfs";
 
 export const Title = styled.h2`
   font-size: ${rfs(45)};
   font-weight: bold;
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   background-color: #ff00ff;
-  background-image: linear-gradient(45deg, #ff00ff, #00ffff);
+  background-image: linear-gradient(45deg, #ff00ff, #0044FF);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
