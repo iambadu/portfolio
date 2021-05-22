@@ -29,7 +29,9 @@ export const WorkText = styled.p`
 `;
 
 export const WorkImg = styled.img`
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display:block;
   border-radius: 5px;
 `;
 

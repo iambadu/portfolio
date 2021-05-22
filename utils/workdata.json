@@ -3,9 +3,11 @@
         {
           "url": "netflix",
           "thumb": "netflix.png",
-          "image1":"netflix-1.png",
-          "image2":"netflix-2.png",
+          "image1":"netflix-1.jpg",
+          "image2":"netflix-2.jpg",
           "title": "Netflix Website Clone",
+          "link": "www.bflix.netlify.app",
+          "github": "https://github.com/iambadu/netflix-clone",
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
           "tools": [
             "Reactjs",
@@ -19,9 +21,10 @@
         {
           "url": "tesla",
           "thumb": "tesla.png",
-          "image1": "tesla-1.png",
-          "image2": "tesla-2.png",
-          "link":"http://www.facebook.com",
+          "image1": "tesla-1.jpg",
+          "image2": "tesla-2.jpg",
+          "link":"https://www.tesla.iambadu.com",
+          "github":"https://github.com/iambadu/tesla-clone",
           "title": "Tesla Website Clone",
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
           "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
@@ -29,9 +32,10 @@
         {
           "url": "microsoft",
           "thumb": "microsoft.png",
-          "image1": "microsoft-1.png",
-          "image2": "microsoft-2.png",
-          "link": "http://www.facebook.com",
+          "image1": "micro-1.jpg",
+          "image2": "micro-2.jpg",
+          "link": "https://www.microsoft.iambadu.com",
+          "github":"https://github.com/iambadu/microsoft-clone",
           "title": "Microsoft Website Clone",
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
           "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
@@ -39,9 +43,10 @@
         {
           "url": "techjobs",
           "thumb": "techjobs.png",
-          "image1": "techjobs-1.png",
-          "image2": "techjobs-2.png",
-          "link": "http://www.facebook.com",
+          "image1": "techjobs-1.jpg",
+          "image2": "techjobs-2.jpg",
+          "link": "https://techjobss.netlify.app",
+          "github":"https://github.com/iambadu/techjobs",
           "title": "Jobs Search Website",
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
           "tools": ["Reactjs", "Github API", "Nextjs", "HTML/CSS", "SASS"]
@@ -49,9 +54,10 @@
         {
           "url": "pomodoro",
           "thumb": "pomodoro.png",
-          "image1": "pomodoro-1.png",
-          "image2": "pomodoro-2.png",
-          "link": "http://www.facebook.com",
+          "image1": "pomodoro-1.jpg",
+          "image2": "pomodoro-1.jpg",
+          "link": "https://badutimer.netlify.app",
+          "github":"https://github.com/iambadu/pomodoro",
           "title": "Pomodoro Clock",
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
           "tools": ["Reactjs", "HTML/CSS", "SASS"]

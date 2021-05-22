@@ -7,7 +7,6 @@ import * as W from "./styles/work";
 import workdata from "../../utils/workdata.json";
 
 export default function Project({ data }) {
-console.log(data);
 
   return (
     <>
@@ -19,19 +18,19 @@ console.log(data);
       </W.TitleWrap>
       <W.SideWrap>
         <TitleWrap>
-        <SectionTitle>Overview</SectionTitle>
+          <SectionTitle>Overview</SectionTitle>
         </TitleWrap>
         <Container>
           <SectionWrap>
             <Section>
               <W.WorkTWrap>
                 <W.WorkText>{data.description}</W.WorkText>
-                <W.WorkBtn>View Code</W.WorkBtn>
-                <W.WorkBtn>Go to Website</W.WorkBtn>
+                <W.WorkBtn href={data.github}>View Code</W.WorkBtn>
+                <W.WorkBtn href={data.link}>Go to Website</W.WorkBtn>
               </W.WorkTWrap>
             </Section>
             <Section>
-              <W.WorkImg src="https://loremflickr.com/640/450" alt="" />
+              <W.WorkImg src={`/img/${data.image1}`} alt="" />
             </Section>
           </SectionWrap>
         </Container>
@@ -40,20 +39,18 @@ console.log(data);
       <W.SectWrp>
         <W.SideWrap>
           <TitleWrap>
-          <SectionTitle>Technologies used</SectionTitle>
+            <SectionTitle>Technologies used</SectionTitle>
           </TitleWrap>
           <Container>
             <SectionWrap>
               <Section>
-                <W.WorkImg src="https://loremflickr.com/640/450" alt="" />
+                <W.WorkImg src={`/img/${data.image2}`} alt="" />
               </Section>
               <Section>
                 <W.WorkList>
                   {data.tools.map((item, i) => {
-                    return (
-                      <W.WorkListItem key={i}>{item}</W.WorkListItem>
-                      )
-                    })}
+                    return <W.WorkListItem key={i}>{item}</W.WorkListItem>;
+                  })}
                 </W.WorkList>
               </Section>
             </SectionWrap>

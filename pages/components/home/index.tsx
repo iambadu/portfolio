@@ -6,8 +6,6 @@ import Footer from "../footer";
 import TopHead from "../topheader";
 
 export default function Home() {
-  console.log(workdata.work);
-
   return (
     <H.HeadWrap>
       <TopHead />
@@ -19,30 +17,31 @@ export default function Home() {
           <H.HeroIn>
             <H.HeroTitle>Hi there...Welcome</H.HeroTitle>
             <H.HeroSubText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              cupiditate ullam, ad veritatis accusantium numquam illum minus
-              dolores. Quo cumque minus atque? Iusto veniam suscipit, quibusdam
-              esse quos eos aliquam.
+              I am Emmanuel, a front end web developer currently based in Italy.
+              I love building exceptional websites and applications for the
+              web. I have a long standing history with web development. On a
+              personal level, I am hardworking, a fast learner and constantly
+              seeking to improve my skills.
             </H.HeroSubText>
           </H.HeroIn>
           <H.LinkWrap>
             <H.PBtn>
-              <Link href="/">
-                <a>Hello</a>
+              <Link href="/#work">
+                <a>Recent Work</a>
               </Link>
             </H.PBtn>
             <H.SBtn>
-              <Link href="/">
-                <a>Hello</a>
+              <Link href="/#about">
+                <a>About me</a>
               </Link>
             </H.SBtn>
           </H.LinkWrap>
         </H.Hero>
       </H.HeroWrap>
 
-      <H.Work>
+      <H.Work id="work">
         <H.TitleWrap>
-          <H.SectionText>Recent projects</H.SectionText>
+          {/* <H.SectionText>Recent projects</H.SectionText> */}
           <H.SectionTitle>Recent projects</H.SectionTitle>
         </H.TitleWrap>
         <H.WorkWrap>
@@ -50,9 +49,9 @@ export default function Home() {
             return (
               <Link key={i} href={`/work/${item.url}`}>
                 <a>
-                <H.WorkItem>
-                  <img src={`/img/${item.thumb}`} alt="" />
-                </H.WorkItem>
+                  <H.WorkItem>
+                    <img src={`/img/${item.thumb}`} alt="" />
+                  </H.WorkItem>
                 </a>
               </Link>
             );
@@ -62,7 +61,7 @@ export default function Home() {
 
       <H.Skills>
         <H.TitleWrap>
-          <H.SectionText>My Skills</H.SectionText>
+          {/* <H.SectionText>My Skills</H.SectionText> */}
           <H.SectionTitle>What I can do</H.SectionTitle>
           <H.SkillWrap>
             <H.SkillItem>
@@ -105,25 +104,44 @@ export default function Home() {
         </H.TitleWrap>
       </H.Skills>
 
-      <H.Aboutme>
-        <H.SectionText>My Skills</H.SectionText>
+      <H.Aboutme id="about">
+        {/* <H.SectionText>My Skills</H.SectionText> */}
+        <H.TitleWrap>
+          <H.SectionTitle>About me</H.SectionTitle>
+        </H.TitleWrap>
         <H.Container>
           <H.SectionWrap>
             <H.Section>
-              <H.SectionTitle>What I can do</H.SectionTitle>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              sunt, optio eos totam fugiat perferendis reiciendis nemo, minus
-              voluptates cumque nulla atque? Recusandae, velit? Qui modi
-              voluptate eligendi repudiandae. Voluptate officiis ea tempore
-              odit! Molestias rem id in accusantium recusandae, ducimus
-              dignissimos obcaecati voluptatum sequi error incidunt assumenda
-              illum veniam. Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Quaerat sunt, optio eos totam fugiat perferendis reiciendis
-              nemo, minus voluptates cumque nulla atque? Recusandae, velit? Qui
-              modi voluptate eligendi repudiandae. Voluptate officiis ea tempore
-              odit! Molestias rem id in accusantium recusandae, ducimus
-              dignissimos obcaecati voluptatum sequi error incidunt assumenda
-              illum veniam.
+              <p>
+                I am Emmanuel Badu Sarpong, a passionate web developer based in
+                Italy. I fell in love with developing for the web in the days of
+                the 960 grid system and Bootstrap 2. Since then i have always
+                dabbled in web development and design. Professionally i have
+                been working as a developer for about 3 years now.
+              </p>
+
+              <p>
+                I enjoy building websites and apps. I am very positive, highly
+                motivated and have a firm knowledge of the building blocks of
+                the web (<b>HTML/CSS</b> and <b>Javascript</b>), I am obsessed
+                with beautiful interfaces that are functional.
+              </p>
+
+              <p>
+                I have the ability to adapt to any type of team environment. i
+                am a team player that gets along with others in group settings. i
+                have the ability to work independently while staying on
+                schedule.
+              </p>
+              <H.SocialWrp>
+                <p>You can follow me on Linkedin or Github</p>
+                <div>
+                  <H.LinkedIn href="https://www.linkedin.com/in/iambadu/">
+                    Emmanuel B. Sarpong
+                  </H.LinkedIn>
+                  <H.Git href="https://github.com/iambadu">@iambadu</H.Git>
+                </div>
+              </H.SocialWrp>
             </H.Section>
             <H.Section>
               <H.AboutImg>

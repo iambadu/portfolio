@@ -34,8 +34,8 @@ export const ImgWrap = styled.div`
 export const HeroWrap = styled.div`
   height: calc(90vh - 70px);
   @media (min-width: 1399px) {
-  height: 70vh;
-}
+    height: 70vh;
+  }
 
   color: ${colors.gray_9};
   z-index: 1000;
@@ -46,12 +46,12 @@ export const HeroWrap = styled.div`
   justify-content: center;
 `;
 export const Hero = styled.div`
-@media (min-width: 1399px) {
-  max-width: 900px;
-}
+  @media (min-width: 1399px) {
+    max-width: 900px;
+  }
   max-width: 700px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: -50px;
   overflow: hidden;
   margin: 0 15px;
@@ -85,12 +85,12 @@ export const HeroSubText = styled.p`
   }
 `;
 export const LinkWrap = styled.div`
-box-sizing:border-box;
+  box-sizing: border-box;
   display: flex;
-  overflow:hidden;
+  overflow: hidden;
   @media (max-width: 480px) {
     flex-direction: column;
-  padding: 0 15px 15px;
+    padding: 0 15px 15px;
   }
   width: 100%;
 `;
@@ -101,8 +101,9 @@ export const Btn = styled.button`
     color: #fff;
     text-decoration: none;
     display: block;
-    transition: all 0.4s;
+    transition: all 0.2s;
   }
+  padding:0;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
@@ -115,11 +116,11 @@ export const Btn = styled.button`
   @media (max-width: 480px) {
     width: 100%;
     margin-top: 10px;
-    }
+  }
 `;
 export const PBtn = styled(Btn)`
   a:hover {
-    background-color: ${colors.pink_5};
+    background-color: ${colors.pink_6};
     color: #fff;
   }
   background-color: ${colors.pink_7};
@@ -127,7 +128,7 @@ export const PBtn = styled(Btn)`
 `;
 export const SBtn = styled(Btn)`
   a:hover {
-    background-color: ${colors.gray_5};
+    background-color: ${colors.gray_6};
     color: #fff;
   }
   background-color: ${colors.gray_7};
@@ -207,7 +208,8 @@ export const SkillItem = styled.div`
   width: fit-content;
 `;
 
-// @WORK SECTION
+// @
+//  SECTION
 export const Work = styled(Header)`
   padding: 40px 0;
   color: #fff;
@@ -216,7 +218,7 @@ export const Work = styled(Header)`
 export const SectionTitle = styled.h2`
   font-size: ${rfs(45)};
   text-align: left;
-  font-weight:300;
+  font-weight: 300;
   padding-top: 15px;
 `;
 export const TitleWrap = styled.div`
@@ -240,7 +242,7 @@ export const WorkWrap = styled(Container)`
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     a:first-child {
-      grid-area: span 1!important;
+      grid-area: span 1 !important;
     }
   }
   grid-template-columns: 0.7fr 0.7fr 1fr 1fr;
@@ -255,19 +257,19 @@ export const WorkWrap = styled(Container)`
   } */
 `;
 export const WorkItem = styled.div`
-&:hover{
-  opacity: .7;
-}
-transition: all .2s;
+  &:hover {
+    opacity: 0.7;
+  }
+  transition: all 0.2s;
   border-radius: 8px;
   background-color: ${colors.gray_3};
   width: 100%;
-    height:fit-content;
-    overflow:hidden;
+  height: fit-content;
+  overflow: hidden;
   img {
-    display:block;
-    object-fit:cover;
-    width:100%;
+    display: block;
+    object-fit: cover;
+    width: 100%;
   }
 `;
 
@@ -281,7 +283,7 @@ export const Aboutme = styled.div`
 
 export const SectionWrap = styled.div`
   display: flex;
-  width:100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
@@ -296,12 +298,56 @@ export const Section = styled.div`
   }
 `;
 export const AboutImg = styled.div`
-padding: 25px 0;
+  padding: 25px 0;
   height: fit-content;
   display: flex;
   justify-content: center;
   svg {
     width: 50%;
     height: auto;
+  }
+`;
+
+export const SocialWrp = styled.div`
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+`;
+
+export const LinkedIn = styled.a`
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-flex;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  background: #0288d1;
+  position: relative;
+  padding: 5px 15px;
+  /* height: 32px; */
+  vertical-align: middle;
+  padding-left: 38px;
+  margin-right: 10px;
+  &:before {
+    background: url("/img/linkedin.png") center center no-repeat;
+    background-size: 32px;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 42px;
+    height: 32px;
+  }
+`;
+
+export const Git = styled(LinkedIn)`
+  background: #fff !important;
+  color: #3a3a3a !important;
+  padding: 5px 15px;
+  padding-left: 38px;
+  border: 1px solid #a7a7a7 !important;
+  &:before {
+    background: url("/img/github.png") center center no-repeat !important;
+    background-size: 32px !important;
   }
 `;

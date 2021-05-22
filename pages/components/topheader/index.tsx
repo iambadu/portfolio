@@ -31,10 +31,9 @@ export default function TopHead() {
         </Home.MobiWrap>
         <Home.Navi active={active}>
           <Home.List>
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/">About</NavItem>
-            <NavItem to="/">Love</NavItem>
-            <NavItem to="/">Job</NavItem>
+            <NavItem to="/#work">Work</NavItem>
+            <NavItem to="/#about">About me</NavItem>
+            <NavItem to="/">CV</NavItem>
           </Home.List>
         </Home.Navi>
       </Home.Container>
