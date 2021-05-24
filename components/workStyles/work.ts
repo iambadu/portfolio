@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import colors from "../../../utils/style/colors";
-import rfs from "../../../utils/style/rfs";
+import colors from "../../utils/style/colors";
+import rfs from "../../utils/style/rfs";
 
 export const Title = styled.h2`
   font-size: ${rfs(45)};
@@ -70,7 +70,7 @@ export const WorkBtn = styled.a`
   display: inline-block;
   margin: 6px 10px;
   border-radius: 3px;
-  background-color: ${props => props.drk ? colors.gray_8 : colors.pink_6};
+  background-color: ${colors.pink_6};
   color: #fff;
   outline: 0;
   padding: 12px 30px;
@@ -79,6 +79,13 @@ export const WorkBtn = styled.a`
     outline: 0;
   }
   &:hover {
-    background-color: ${colors.pink_9};
+    opacity: .8;
   }
 `;
+ export const CodeBtn = styled(WorkBtn)`
+ background-color:${colors.gray_7};
+ `;
+
+// const WorkStyles = { Title, TitleWrap, WorkTWrap, WorkText, WorkImg, WorkListItem, WorkList, SideWrap, SectWrp, WorkBtn, CodeBtn }
+
+// export default WorkStyles;

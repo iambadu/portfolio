@@ -1,4 +1,4 @@
-import workdata from "../../../utils/workdata.json";
+import workdata from "../../utils/workdata.json";
 
 import * as H from "./styles/home";
 import Link from "next/link";

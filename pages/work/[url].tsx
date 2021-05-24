@@ -1,8 +1,8 @@
-import Footer from "../components/footer";
-import {SectionTitle,TitleWrap, Section,SectionWrap,} from "../components/home/styles/home";
-import TopHead from "../components/topheader";
-import { Container } from "../components/topheader/styles/topheader";
-import * as W from "./styles/work";
+import Footer from "../../components/footer";
+import {SectionTitle,TitleWrap, Section,SectionWrap,} from "../../components/home/styles/home";
+import TopHead from "../../components/topheader";
+import { Container } from "../../components/topheader/styles/topheader";
+import * as W from "../../components/workStyles/work";
 
 import workdata from "../../utils/workdata.json";
 
@@ -26,7 +26,7 @@ export default function Project({ data }) {
               <W.WorkTWrap>
                 <W.WorkText>{data.description}</W.WorkText>
                 <W.WorkBtn href={data.github}>View Code</W.WorkBtn>
-                <W.WorkBtn drk href={data.link}>Go to Website</W.WorkBtn>
+                <W.CodeBtn  href={data.link}>Go to Website</W.CodeBtn>
               </W.WorkTWrap>
             </Section>
             <Section>

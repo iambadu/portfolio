@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import colors from "../../../../utils/style/colors";
-import rfs from "../../../../utils/style/rfs";
+import colors from "../../../utils/style/colors";
+import rfs from "../../../utils/style/rfs";
 
 let main = "#25373D";
 
