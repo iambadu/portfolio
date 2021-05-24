@@ -21,7 +21,7 @@ export const TitleWrap = styled.section`
 `;
 
 export const WorkTWrap = styled.div`
-  border-left: 8px solid ${colors.pink_6};
+  border-left: 6px solid ${colors.pink_2};
 `;
 export const WorkText = styled.p`
   padding: 25px 12px;
@@ -68,9 +68,9 @@ export const SectWrp = styled.div`
 
 export const WorkBtn = styled.a`
   display: inline-block;
-  margin: 0 10px;
+  margin: 6px 10px;
   border-radius: 3px;
-  background-color: ${colors.pink_6};
+  background-color: ${props => props.drk ? colors.gray_8 : colors.pink_6};
   color: #fff;
   outline: 0;
   padding: 12px 30px;

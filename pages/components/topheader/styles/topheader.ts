@@ -79,7 +79,7 @@ export const NavIcon = styled.div<{ active: boolean }>`
 export const Logo = styled.div`
   margin-right: auto;
   img {
-    height: 30px;
+    height: 25px;
   }
 `;
 export const Navi = styled.nav<{ active: boolean }>`
@@ -118,7 +118,7 @@ export const Item = styled.li`
       padding: 10px;
       display: block;
       margin-bottom: 10px;
-      border: 2px solid #9faccf;
+      border: 2px solid ${colors.gray_6};
     }
   }
 `;

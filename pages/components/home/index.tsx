@@ -5,10 +5,10 @@ import Link from "next/link";
 import Footer from "../footer";
 import TopHead from "../topheader";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <H.HeadWrap>
-      <TopHead />
+      <TopHead title="Emmanuel Badu Sarpong - Frontend Developer" />
       <H.ImgWrap>
         <img src="/img/bgImg.svg" />
       </H.ImgWrap>
@@ -17,11 +17,11 @@ export default function Home() {
           <H.HeroIn>
             <H.HeroTitle>Hi there...Welcome</H.HeroTitle>
             <H.HeroSubText>
-              I am Emmanuel, a front end web developer currently based in Italy.
-              I love building exceptional websites and applications for the
-              web. I have a long standing history with web development. On a
-              personal level, I am hardworking, a fast learner and constantly
-              seeking to improve my skills.
+              I am Emmanuel, a front end web developer in Verona - Italy. I love
+              building exceptional websites and applications for the web. I have
+              a long standing history with web development. On a personal level,
+              I am hardworking, a fast learner and constantly seeking to improve
+              my skills.
             </H.HeroSubText>
           </H.HeroIn>
           <H.LinkWrap>
@@ -129,12 +129,20 @@ export default function Home() {
 
               <p>
                 I have the ability to adapt to any type of team environment. i
-                am a team player that gets along with others in group settings. i
-                have the ability to work independently while staying on
+                am a team player that gets along with others in group settings.
+                i have the ability to work independently while staying on
                 schedule.
               </p>
               <H.SocialWrp>
-                <p>You can follow me on Linkedin or Github</p>
+                <p>
+                  You can email at{" "}
+                  <H.Email>
+                    <a href="mailto:hello@iambadu.com?subject=Hello Sarpong">
+                      hello@iambadu.com
+                    </a>
+                  </H.Email>{" "}
+                </p>
+                <p>You can also connect with me on Github and Linkedin</p>
                 <div>
                   <H.LinkedIn href="https://www.linkedin.com/in/iambadu/">
                     Emmanuel B. Sarpong

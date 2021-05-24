@@ -8,7 +8,7 @@
           "title": "Netflix Website Clone",
           "link": "www.bflix.netlify.app",
           "github": "https://github.com/iambadu/netflix-clone",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "description": "This project is a clone of the netflix.com, the website of Netflix Inc, the American over-the-top content platform and production company headquartered in Los Gatos, California. The project focused on cloning the homepage, Signin, Signup and Browse pages.",
           "tools": [
             "Reactjs",
             "Firebase Firestore",
@@ -26,7 +26,7 @@
           "link":"https://www.tesla.iambadu.com",
           "github":"https://github.com/iambadu/tesla-clone",
           "title": "Tesla Website Clone",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "description": "This project is a clone of the tesla.com, the website of Tesla Inc.It  is an American electric vehicle and clean energy company based in Palo Alto, California. The project sought to clone most of the functionality and layout of the homepage.",
           "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
         },
         {
@@ -37,7 +37,7 @@
           "link": "https://www.microsoft.iambadu.com",
           "github":"https://github.com/iambadu/microsoft-clone",
           "title": "Microsoft Website Clone",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "description": "This project is a clone of the microsoft.com, the website of Microsoft Corporation. The American multinational technology company with headquarters in Redmond, Washington. The project focused on cloning the layout and major functionalities like dropdown, slide and others on the homepage",
           "tools": ["Reactjs", "HTML/CSS", "Styled Components"]
         },
         {
@@ -48,7 +48,7 @@
           "link": "https://techjobss.netlify.app",
           "github":"https://github.com/iambadu/techjobs",
           "title": "Jobs Search Website",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "description": "This project is a job search site powered by the GithubJobs API. On this site, you can search for jobs based on location or description. You can also follow through to apply for jobs on the Job detail page.",
           "tools": ["Reactjs", "Github API", "Nextjs", "HTML/CSS", "SASS"]
         },
         {
@@ -59,7 +59,7 @@
           "link": "https://badutimer.netlify.app",
           "github":"https://github.com/iambadu/pomodoro",
           "title": "Pomodoro Clock",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores voluptatem iure. Sunt pariatur sapiente ut ab aut aspernatur veniam! Ipsa ad commodi quae qui? Accusantium dolorem cumque doloribus asperiores?",
+          "description": "This project is a shot at creating the popular Pomodoro productivity clock. You can start the timers which includes short breaks and long breaks. You can also change the length of the timers.",
           "tools": ["Reactjs", "HTML/CSS", "SASS"]
         }
     ]

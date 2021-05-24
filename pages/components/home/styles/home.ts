@@ -351,3 +351,14 @@ export const Git = styled(LinkedIn)`
     background-size: 32px !important;
   }
 `;
+
+export const Email = styled.span`
+display:inline-block;
+border-radius:3px;
+background: #333;
+a {
+color: #fff;
+width:100%;
+}
+padding: 5px 20px;
+`;

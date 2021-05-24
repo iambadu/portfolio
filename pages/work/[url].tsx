@@ -10,7 +10,7 @@ export default function Project({ data }) {
 
   return (
     <>
-      <TopHead />
+      <TopHead title={data.title} />
       <W.TitleWrap>
         <Container>
           <W.Title>{data.title}</W.Title>
@@ -26,7 +26,7 @@ export default function Project({ data }) {
               <W.WorkTWrap>
                 <W.WorkText>{data.description}</W.WorkText>
                 <W.WorkBtn href={data.github}>View Code</W.WorkBtn>
-                <W.WorkBtn href={data.link}>Go to Website</W.WorkBtn>
+                <W.WorkBtn drk href={data.link}>Go to Website</W.WorkBtn>
               </W.WorkTWrap>
             </Section>
             <Section>
